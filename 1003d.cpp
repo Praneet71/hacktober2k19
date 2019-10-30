@@ -26,5 +26,25 @@ int main ()
     	ll t=log2(a[i]);
     	p[t]++;
     }
+	while(q--)
+    {
+    	ll k,cnt=0;
+    	cin>>k;
+    	for(int j=32;j>=0;j--)
+    	{
+    			ll r=pow(2,j);
+    			ll t=(k/r);
+    			if(t>p[j])
+    				t=p[j];
+    			cnt+=t;
+    			k-=(r*t);
+//    		}
+    	}
+    	if(k==0)
+    		cout<<cnt<<endl;
+    	else
+    		cout<<-1<<endl;
+
+    }
     return 0;
 }
