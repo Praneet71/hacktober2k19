@@ -21,6 +21,13 @@ int main ()
     ll n,k;
     cin>>n>>k;
     ll a[k+5]={0};
+	for(int i=0;i<n;i++)
+    {
+    	ll x;
+    	cin>>x;
+    	a[x]++;
+    }
+    ll ans=0;
     for(int i=1;i<=k;i++)
     {
     	if(a[i]%2 )
