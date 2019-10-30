@@ -26,6 +26,14 @@ int main ()
     	cin>>x;
     	a.pb(x);
     }
+	 for(int i=0;i<n;i++)
+    {
+    	ll x;
+    	cin>>x;
+    	b.pb(x);
+    }
+    ll mx=0;
+    ll flag=1;
     for(int i=0;i<n;)
     {
     	    	if(b[i]+a[i+1]>=b[i+1] && i<=n-2 && flag==1)
