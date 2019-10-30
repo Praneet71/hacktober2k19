@@ -22,6 +22,7 @@ int main ()
     ll ss=n+k;
     ss*=2;
     ll t=sqrt(9+(4*ss));
+    t=(t-3)/2;
     cout<<n-t<<endl;
     return 0;
 }
